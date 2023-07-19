@@ -23,16 +23,30 @@ ul {
     margin: 0;
 }
 
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(24, 111, 211);
+    gap: 170px;
+    height: 60px;
+    width: 300px;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+}
+
 .header-icons {
     display: flex;
     font-size: 2rem;
     padding-right: 20px;
     gap: 40px;
-}
-
-a{
-    color: black;
-    text-decoration: none;
 }
 
 .header-logo {
@@ -45,7 +59,7 @@ a{
     justify-content: space-between;
 }
 
-.news-section h1 {
+.news-section span {
     font-size: 7rem;
     max-width: 350px;
 }
@@ -104,16 +118,69 @@ a{
     color: grey;
 }
 
-button{
+.publications {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
+    justify-content: space-around;
+}
+
+.publication-section h1 {
+    font-size: 6rem;
+    margin: auto;
+    max-width: 800px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.blue-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: rgb(24, 111, 211);
-    gap: 170px;
-    height: 60px;
-    width: 300px;
     color: white;
+    width: 30%;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.blue-box p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.blue-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.blue-box span {
+    font-size: 4rem;
+}
+
+.black-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.black-box p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.black-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.black-box span {
+    font-size: 4rem;
 }
 
 @media screen and (max-width:768px) {
