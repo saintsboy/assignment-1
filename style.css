@@ -1,0 +1,40 @@
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+i{
+    font-size: 2rem;
+    padding: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.header-logo{
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width:768px){
+    ul{
+        display: none;
+    }
+    div .fa-globe{
+        display: none;
+    }
+
+}
