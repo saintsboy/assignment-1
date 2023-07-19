@@ -81,7 +81,7 @@ button {
     padding: 2rem;
 }
 
-.news-items > div {
+.news-item {
     display: flex;
     padding: 10px;
     background-color: rgb(213, 212, 212);
@@ -190,5 +190,63 @@ button {
     div .fa-globe{
         display: none;
     }
+    .news-section p{
+        display: none;
+    }
+    
+    .news-items{
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .news-item{
+        width: 715px;
+        display: block;
+    }
 
+    .mobile-remove{
+        display: none;
+    }
+
+    button{
+        width: 100%;
+        gap: 550px;
+    }
+    
+    .publications{
+        display: block;
+        align-items: center;
+    }
+
+    .black-box{
+        width: 94%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .blue-box{
+        width: 94%;
+        margin: auto;
+        margin-bottom: 10px;
+    
+    }
+    main{
+        padding: 1rem;
+    }
+
+    .news-items img{
+        width: 100%;
+    }
+
+    .news-item-text{
+        flex-direction: column-reverse;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .news-item-text span{
+        width: 100%;
+    }
+
+    .news-item-text p{
+        padding-top: 20px;
+    }
 }
