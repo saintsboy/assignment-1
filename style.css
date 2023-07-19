@@ -1,22 +1,33 @@
+body {
+    margin: 0;
+}
 
-header{
+main {
+    background-color: rgb(237, 234, 234);
+    padding: 2rem;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    height: 3rem;
 }
 
-ul{
+ul {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
-i{
+.header-icons {
+    display: flex;
     font-size: 2rem;
-    padding: 20px;
+    padding-right: 20px;
+    gap: 40px;
 }
 
 a{
@@ -24,12 +35,88 @@ a{
     text-decoration: none;
 }
 
-.header-logo{
-    font-size: 3rem;
-    padding: 1rem;
+.header-logo {
+    font-size: 2rem;
+    padding-left: 2rem;
 }
 
-@media screen and (max-width:768px){
+.news-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-section h1 {
+    font-size: 7rem;
+    max-width: 350px;
+}
+
+.news-section .arrow-down {
+    font-size: 13rem;
+
+}
+
+.news-section p {
+    color: grey;
+}
+
+.news-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+    padding: 2rem;
+}
+
+.news-items > div {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(213, 212, 212);
+}
+
+.news-items img {
+    height: 400px;
+    width: 300px;
+}
+
+.news-item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    max-width: 200px;
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+.news-item-text-bigger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    max-width: 350px;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+.news-items p {
+    margin: 0;
+    font-size: 13px;
+    color: grey;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgb(24, 111, 211);
+    gap: 170px;
+    height: 60px;
+    width: 300px;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
     ul{
         display: none;
     }
